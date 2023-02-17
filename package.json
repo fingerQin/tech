@@ -1,0 +1,28 @@
+{
+    "name": "tech",
+    "version": "1.0.0",
+    "description": "up 主总想为互联网兄弟集妹留下点什么~",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/fingerQin/tech.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/fingerQin/tech/issues"
+    },
+    "homepage": "https://github.com/fingerQin/tech#readme",
+    "devDependencies": {
+        "vitepress": "^1.0.0-alpha.46",
+        "vue": "^3.2.47"
+    },
+    "scripts": {
+        "docs:dev": "vitepress dev docs",
+        "docs:build": "vitepress build docs",
+        "docs:preview": "vitepress preview docs"
+    }
+}
