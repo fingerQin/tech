@@ -84,11 +84,68 @@ export default {
             }],
 
             '/mysql/': [{
-                text: 'Guide',
+                text: 'MySQL 基础',
+                collapsed: false,
                 items: [
-                    { text: 'Index', link: '/guide/' },
-                    { text: 'One', link: '/guide/one' },
-                    { text: 'Two', link: '/guide/two' }
+                    { text: 'MySQL 版本差异', link: '/mysql/basics/versions.html' },
+                    { text: 'MySQL 数据类型', link: '/mysql/basics/data-type.html' },
+                    { text: 'MySQL 操作符与优先级', link: '/mysql/basics/op.html' },
+                    { text: 'MySQL 配置管理', link: '/mysql/basics/config.html' },
+                    { text: 'MySQL 存储引擎', link: '/mysql/basics/engine.html' },
+                    { text: 'MySQL 日志管理', link: '/mysql/basics/log.html' },
+                    { text: 'MySQL 国际化', link: '/mysql/basics/i18n.html' },
+                    { text: 'MySQL 索引失效总结', link: '/mysql/basics/index-failed.html' }
+                ]
+            },
+            {
+                text: 'MySQL 权限管理',
+                collapsed: false,
+                items: [
+                    { text: 'MySQL 新增用户', link: '/mysql/privilege/add-user.html' },
+                    { text: 'MySQL 删除用户', link: '/mysql/privilege/delete-user.html' },
+                    { text: 'MySQL 设置用户权限', link: '/mysql/privilege/privilege.html' },
+                    { text: 'MySQL 用户密码修改', link: '/mysql/privilege/pwd-edit.html' }
+                ]
+            },
+            {
+                text: 'SQL 语句语法',
+                collapsed: false,
+                items: [
+                    { 
+                        text: '数据定义语句 DDL', 
+                        collapsed: false,
+                        items: [
+                            { text: 'ALTER DATABASE 语法', link: '/mysql/sql/ddl/alter-database.md' },
+                            { text: 'CREATE DATABASE 语法', link: '/mysql/sql/ddl/create-table.md' },
+                            { text: 'DROP DATABASE 语法', link: '/mysql/sql/ddl/drop-database.md' },
+
+                            { text: 'ALTER TABLE 语法', link: '/mysql/sql/ddl/alter-table.md' },
+                            { text: 'CREATE TABLE 语法', link: '/mysql/sql/ddl/create-table.md' },
+                            { text: 'DROP TABLE 语法', link: '/mysql/sql/ddl/drop-table.md' },
+                            
+                            { text: 'ALTER TABLE 语法', link: '/mysql/sql/ddl/alter-index.md' },
+                            { text: 'CREATE INDEX 语法', link: '/mysql/sql/ddl/create-index.md' },
+                            { text: 'DROP INDEX 语法', link: '/mysql/sql/ddl/drop-index.md' },
+
+                            { text: 'RENAME TABLE 语法', link: '/mysql/sql/ddl/rename-table.md' }
+                        ]
+                    },
+                    { 
+                        text: '数据操作语句 DML', 
+                        collapsed: false,
+                        items: [
+                            { text: 'SELECT 语法', link: '/mysql/sql/dml/select.md' },
+                            { text: 'INSERT 语法', link: '/mysql/sql/dml/insert.md' },
+                            { text: 'UPDATE 语法', link: '/mysql/sql/dml/update.md' },
+                            { text: 'DELETE 语法', link: '/mysql/sql/dml/delete.md' },
+                            { text: 'REPLACE 语法', link: '/mysql/sql/dml/replace.md' },
+                            { text: 'TRUNCATE 语法', link: '/mysql/sql/dml/truncate.md' },
+
+                            { text: 'HANDLER 语法', link: '/mysql/sql/dml/handler.md' },
+                            { text: 'DO 语法', link: '/mysql/sql/dml/do.md' },
+                            { text: 'LOAD DATA INFILE 语法', link: '/mysql/sql/dml/load-data-infile.md' },
+                        ]
+                    }
                 ]
             }],
 
