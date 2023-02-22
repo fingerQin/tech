@@ -76,6 +76,7 @@ export default {
 
             '/php/': [{
                 text: 'Guide',
+                collapsed: false,
                 items: [
                     { text: 'Index', link: '/guide/' },
                     { text: 'One', link: '/guide/one' },
@@ -84,77 +85,92 @@ export default {
             }],
 
             '/mysql/': [{
-                text: 'MySQL 基础',
-                collapsed: false,
-                items: [
-                    { text: 'MySQL 版本差异', link: '/mysql/basics/versions.html' },
-                    { text: 'MySQL 数据类型', link: '/mysql/basics/data-type.html' },
-                    { text: 'MySQL 操作符与优先级', link: '/mysql/basics/op.html' },
-                    { text: 'MySQL 配置管理', link: '/mysql/basics/config.html' },
-                    { text: 'MySQL 存储引擎', link: '/mysql/basics/engine.html' },
-                    { text: 'MySQL 日志管理', link: '/mysql/basics/log.html' },
-                    { text: 'MySQL 国际化', link: '/mysql/basics/i18n.html' },
-                    { text: 'MySQL 索引失效总结', link: '/mysql/basics/index-failed.html' }
-                ]
-            },
-            {
-                text: 'MySQL 权限管理',
-                collapsed: false,
-                items: [
-                    { text: 'MySQL 新增用户', link: '/mysql/privilege/add-user.html' },
-                    { text: 'MySQL 删除用户', link: '/mysql/privilege/delete-user.html' },
-                    { text: 'MySQL 设置用户权限', link: '/mysql/privilege/privilege.html' },
-                    { text: 'MySQL 用户密码修改', link: '/mysql/privilege/pwd-edit.html' }
-                ]
-            },
-            {
-                text: 'SQL 语句语法',
-                collapsed: false,
-                items: [
-                    { 
-                        text: '数据定义语句 DDL', 
-                        collapsed: false,
-                        items: [
-                            { text: 'ALTER DATABASE 语法', link: '/mysql/sql/ddl/alter-database.md' },
-                            { text: 'CREATE DATABASE 语法', link: '/mysql/sql/ddl/create-table.md' },
-                            { text: 'DROP DATABASE 语法', link: '/mysql/sql/ddl/drop-database.md' },
+                    text: 'MySQL 基础',
+                    collapsed: false,
+                    items: [
+                        { text: 'MySQL 版本差异', link: '/mysql/basics/versions.html' },
+                        { text: 'MySQL 数据类型', link: '/mysql/basics/data-type.html' },
+                        { text: 'MySQL 操作符与优先级', link: '/mysql/basics/op.html' },
+                        { text: 'MySQL 配置管理', link: '/mysql/basics/config.html' },
+                        { text: 'MySQL 存储引擎', link: '/mysql/basics/engine.html' },
+                        { text: 'MySQL 日志管理', link: '/mysql/basics/log.html' },
+                        { text: 'MySQL 国际化', link: '/mysql/basics/i18n.html' },
+                        { text: 'MySQL 索引失效总结', link: '/mysql/basics/index-failed.html' }
+                    ]
+                },
+                {
+                    text: 'MySQL 权限管理',
+                    collapsed: false,
+                    items: [
+                        { text: 'MySQL 新增用户', link: '/mysql/privilege/add-user.html' },
+                        { text: 'MySQL 删除用户', link: '/mysql/privilege/delete-user.html' },
+                        { text: 'MySQL 设置用户权限', link: '/mysql/privilege/privilege.html' },
+                        { text: 'MySQL 用户密码修改', link: '/mysql/privilege/pwd-edit.html' }
+                    ]
+                },
+                {
+                    text: 'SQL 语句语法',
+                    collapsed: false,
+                    items: [{
+                            text: '数据定义语句 DDL',
+                            collapsed: false,
+                            items: [
+                                { text: 'ALTER DATABASE 语法', link: '/mysql/sql/ddl/alter-database.md' },
+                                { text: 'CREATE DATABASE 语法', link: '/mysql/sql/ddl/create-table.md' },
+                                { text: 'DROP DATABASE 语法', link: '/mysql/sql/ddl/drop-database.md' },
 
-                            { text: 'ALTER TABLE 语法', link: '/mysql/sql/ddl/alter-table.md' },
-                            { text: 'CREATE TABLE 语法', link: '/mysql/sql/ddl/create-table.md' },
-                            { text: 'DROP TABLE 语法', link: '/mysql/sql/ddl/drop-table.md' },
-                            
-                            { text: 'ALTER TABLE 语法', link: '/mysql/sql/ddl/alter-index.md' },
-                            { text: 'CREATE INDEX 语法', link: '/mysql/sql/ddl/create-index.md' },
-                            { text: 'DROP INDEX 语法', link: '/mysql/sql/ddl/drop-index.md' },
+                                { text: 'ALTER TABLE 语法', link: '/mysql/sql/ddl/alter-table.md' },
+                                { text: 'CREATE TABLE 语法', link: '/mysql/sql/ddl/create-table.md' },
+                                { text: 'DROP TABLE 语法', link: '/mysql/sql/ddl/drop-table.md' },
 
-                            { text: 'RENAME TABLE 语法', link: '/mysql/sql/ddl/rename-table.md' }
-                        ]
-                    },
-                    { 
-                        text: '数据操作语句 DML', 
-                        collapsed: false,
-                        items: [
-                            { text: 'SELECT 语法', link: '/mysql/sql/dml/select.md' },
-                            { text: 'INSERT 语法', link: '/mysql/sql/dml/insert.md' },
-                            { text: 'UPDATE 语法', link: '/mysql/sql/dml/update.md' },
-                            { text: 'DELETE 语法', link: '/mysql/sql/dml/delete.md' },
-                            { text: 'REPLACE 语法', link: '/mysql/sql/dml/replace.md' },
-                            { text: 'TRUNCATE 语法', link: '/mysql/sql/dml/truncate.md' },
+                                { text: 'ALTER TABLE 语法', link: '/mysql/sql/ddl/alter-index.md' },
+                                { text: 'CREATE INDEX 语法', link: '/mysql/sql/ddl/create-index.md' },
+                                { text: 'DROP INDEX 语法', link: '/mysql/sql/ddl/drop-index.md' },
 
-                            { text: 'HANDLER 语法', link: '/mysql/sql/dml/handler.md' },
-                            { text: 'DO 语法', link: '/mysql/sql/dml/do.md' },
-                            { text: 'LOAD DATA INFILE 语法', link: '/mysql/sql/dml/load-data-infile.md' },
-                        ]
-                    }
-                ]
-            }],
+                                { text: 'RENAME TABLE 语法', link: '/mysql/sql/ddl/rename-table.md' }
+                            ]
+                        },
+                        {
+                            text: '数据操作语句 DML',
+                            collapsed: false,
+                            items: [
+                                { text: 'SELECT 语法', link: '/mysql/sql/dml/select.md' },
+                                { text: 'INSERT 语法', link: '/mysql/sql/dml/insert.md' },
+                                { text: 'UPDATE 语法', link: '/mysql/sql/dml/update.md' },
+                                { text: 'DELETE 语法', link: '/mysql/sql/dml/delete.md' },
+                                { text: 'REPLACE 语法', link: '/mysql/sql/dml/replace.md' },
+                                { text: 'TRUNCATE 语法', link: '/mysql/sql/dml/truncate.md' },
+
+                                { text: 'HANDLER 语法', link: '/mysql/sql/dml/handler.md' },
+                                { text: 'DO 语法', link: '/mysql/sql/dml/do.md' },
+                                { text: 'LOAD DATA INFILE 语法', link: '/mysql/sql/dml/load-data-infile.md' },
+                            ]
+                        }
+                    ]
+                }
+            ],
 
             '/nginx/': [{
-                text: 'Guide',
+                text: 'Nginx 基础',
+                collapsed: false,
                 items: [
-                    { text: 'Index', link: '/guide/' },
-                    { text: 'One', link: '/guide/one' },
-                    { text: 'Two', link: '/guide/two' }
+                    { text: 'Nginx 安装', link: '/nginx/basics/install.html' },
+                    { text: 'Nginx 配置', link: '/nginx/basics/config.html' },
+                    { text: 'Nginx 优化', link: '/nginx/basics/optimize.html' },
+                    { text: 'Nginx 日志', link: '/nginx/basics/log.html' },
+                    { text: 'Nginx 命令行/服务管理', link: '/nginx/basics/manage.html' },
+                ]
+            }, {
+                text: 'Nginx 应用',
+                collapsed: false,
+                items: [
+                    { text: '配置虚拟机 vhost', link: '/nginx/adv/vhost.html' },
+                    { text: '配置代理 proxy', link: '/nginx/adv/proxy.html' },
+                    { text: '防盗链', link: '/nginx/adv/doorchain.html' },
+                    { text: '负载均衡', link: '/nginx/adv/load-banlance.html' },
+                    { text: '站点支持 HTTPS', link: '/nginx/adv/https.html' },
+                    { text: 'Gzip 请求压缩', link: '/nginx/adv/gzip.html' },
+                    { text: 'Nginx rewrite URL 重写', link: '/nginx/adv/rewrite.html' },
                 ]
             }],
 
@@ -262,13 +278,57 @@ export default {
             ],
 
             '/basic-theor/': [{
-                text: 'Guide',
-                items: [
-                    { text: 'Index', link: '/guide/' },
-                    { text: 'One', link: '/guide/one' },
-                    { text: 'Two', link: '/guide/two' }
-                ]
-            }],
+                    text: '系统篇',
+                    collapsed: false,
+                    items: [
+                        { text: '计算机系统结构', link: '/basic-theor/system/computer.html' },
+                        { text: '计算机组成原理', link: '/basic-theor/system/theory.html' },
+                    ]
+                },
+                {
+                    text: '排序算法篇',
+                    collapsed: false,
+                    items: [
+                        { text: '冒泡排序', link: '/basic-theor/algorithm/bubble.html' },
+                        { text: '选择排序', link: '/basic-theor/algorithm/selection.html' },
+                        { text: '插入排序', link: '/basic-theor/algorithm/insertion.html' },
+                        { text: '希尔排序', link: '/basic-theor/algorithm/shell.html' },
+                        { text: '归并排序', link: '/basic-theor/algorithm/merge.html' },
+                        { text: '快速排序', link: '/basic-theor/algorithm/quick.html' },
+                        { text: '堆排序', link: '/basic-theor/algorithm/heap.html' },
+                        { text: '计数排序', link: '/basic-theor/algorithm/counting.html' },
+                        { text: '桶排序', link: '/basic-theor/algorithm/bucket.html' },
+                        { text: '基数排序', link: '/basic-theor/algorithm/radix.html' },
+                    ]
+                },
+                {
+                    text: '设计模式篇',
+                    collapsed: false,
+                    items: [
+                        { text: '工厂模式', link: '/basic-theor/design-mode/factory.html' },
+                        { text: '单例模式', link: '/basic-theor/design-mode/singleton.html' },
+                        { text: '代理模式', link: '/basic-theor/design-mode/proxy.html' },
+                        { text: '策略模式', link: '/basic-theor/design-mode/strategy.html' },
+                        { text: '模板方法模式', link: '/basic-theor/design-mode/template.html' },
+                        { text: '建造者模式', link: '/basic-theor/design-mode/builder.html' },
+                        { text: '原型模式', link: '/basic-theor/design-mode/prototype.html' },
+                        { text: '中介者模式', link: '/basic-theor/design-mode/mediator.html' },
+                        { text: '适配器模式', link: '/basic-theor/design-mode/adapter.html' },
+                        { text: '门面模式', link: '/basic-theor/design-mode/facade.html' },
+                        { text: '装饰模式', link: '/basic-theor/design-mode/decorator.html' },
+                        { text: '观察者模式', link: '/basic-theor/design-mode/observer.html' },
+                        { text: '组合模式', link: '/basic-theor/design-mode/combined.html' },
+                        { text: '状态模式', link: '/basic-theor/design-mode/combined.html' },
+                    ]
+                },
+                {
+                    text: '网络篇',
+                    collapsed: false,
+                    items: [
+                        { text: 'TCP/IP 网络协议', link: '/basic-theor/network/tcp-ip.html' }
+                    ]
+                }
+            ],
         }
     }
 }
