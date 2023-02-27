@@ -170,16 +170,16 @@ export default {
                     { text: '负载均衡', link: '/nginx/adv/load-banlance.html' },
                     { text: '站点支持 HTTPS', link: '/nginx/adv/https.html' },
                     { text: 'Gzip 请求压缩', link: '/nginx/adv/gzip.html' },
-                    { text: 'Nginx rewrite URL 重写', link: '/nginx/adv/rewrite.html' },
+                    { text: 'rewrite URL 重写', link: '/nginx/adv/rewrite.html' },
                 ]
             }],
 
             '/project/': [{
-                text: 'Guide',
+                text: '电商篇',
                 items: [
-                    { text: 'Index', link: '/guide/' },
-                    { text: 'One', link: '/guide/one' },
-                    { text: 'Two', link: '/guide/two' }
+                    { text: 'Index', link: '/project/' },
+                    { text: 'One', link: '/project/one' },
+                    { text: 'Two', link: '/project/two' }
                 ]
             }],
 
@@ -306,6 +306,7 @@ export default {
                     collapsed: false,
                     items: [
                         { text: '工厂模式', link: '/basic-theor/design-mode/factory.html' },
+                        { text: '抽象工厂模式', link: '/basic-theor/design-mode/factory-abstract.html' },
                         { text: '单例模式', link: '/basic-theor/design-mode/singleton.html' },
                         { text: '代理模式', link: '/basic-theor/design-mode/proxy.html' },
                         { text: '策略模式', link: '/basic-theor/design-mode/strategy.html' },
@@ -318,14 +319,21 @@ export default {
                         { text: '装饰模式', link: '/basic-theor/design-mode/decorator.html' },
                         { text: '观察者模式', link: '/basic-theor/design-mode/observer.html' },
                         { text: '组合模式', link: '/basic-theor/design-mode/combined.html' },
-                        { text: '状态模式', link: '/basic-theor/design-mode/combined.html' },
+                        { text: '状态模式', link: '/basic-theor/design-mode/status.html' },
+                        { text: '命令模式', link: '/basic-theor/design-mode/command.html' },
+                        { text: '迭代器模式', link: '/basic-theor/design-mode/iterator.html' },
+                        { text: '备忘录模式', link: '/basic-theor/design-mode/memo.html' },
+                        { text: '解释器模式', link: '/basic-theor/design-mode/interpreter.html' },
+                        { text: '桥梁模式', link: '/basic-theor/design-mode/bridge.html' },
+                        { text: '享元模式', link: '/basic-theor/design-mode/flyweight.html' },
                     ]
                 },
                 {
                     text: '网络篇',
                     collapsed: false,
                     items: [
-                        { text: 'TCP/IP 网络协议', link: '/basic-theor/network/tcp-ip.html' }
+                        { text: 'OSI 网络七层模型', link: '/basic-theor/network/osi.html' },
+                        { text: 'TCP/IP 网络协议', link: '/basic-theor/network/tcp-ip.html' },
                     ]
                 }
             ],
