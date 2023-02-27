@@ -78,9 +78,9 @@ export default {
                 text: 'Guide',
                 collapsed: false,
                 items: [
-                    { text: 'Index', link: '/guide/' },
-                    { text: 'One', link: '/guide/one' },
-                    { text: 'Two', link: '/guide/two' }
+                    { text: 'Index', link: '/php/' },
+                    { text: 'One', link: '/php/one' },
+                    { text: 'Two', link: '/php/two' }
                 ]
             }],
 
