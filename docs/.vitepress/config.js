@@ -75,14 +75,51 @@ export default {
             ],
 
             '/php/': [{
-                text: 'Guide',
-                collapsed: false,
-                items: [
-                    { text: 'Index', link: '/php/' },
-                    { text: 'One', link: '/php/one' },
-                    { text: 'Two', link: '/php/two' }
-                ]
-            }],
+                    text: '基础',
+                    collapsed: false,
+                    items: [
+                        { text: 'PHP 安装', link: '/php/basics/install.html' },
+                        { text: 'PHP 各版本特性', link: '/php/basics/version.html' },
+                        { text: 'PHP 配置', link: '/php/basics/config.html' },
+                        { text: 'PHP-FPM', link: '/php/basics/php-fpm.html' },
+                        { text: 'PHP 数据类型', link: '/php/basics/data-type.html' },
+                        { text: 'PHP GC(垃圾回收)', link: '/php/basics/gc.html' },
+                        { text: 'PHP Error / Exception', link: '/php/basics/error-exception.html' },
+                        { text: 'PHP 生成器', link: '/php/basics/generators.html' },
+                        { text: 'PHP 纤程', link: '/php/basics/fibers.html' },
+                        { text: 'PHP 注解', link: '/php/basics/attributes-overview.html' },
+                        { text: 'PHP Socket', link: '/php/basics/socket.html' },
+                        { text: 'PHP Session / Cookie', link: '/php/basics/session-cookie.html' },
+                    ]
+                },
+                {
+                    text: '高阶',
+                    collapsed: false,
+                    items: [
+                        { text: 'Session 分布式', link: '/php/adv/session-distribute.html' },
+                        { text: '消息队列', link: '/php/adv/queue.html' },
+                        { text: '分布式锁', link: '/php/adv/distribute-lock.html' },
+                        { text: '加密/解密', link: '/php/adv/encryption.html' },
+                        { text: 'UUID', link: '/php/adv/uuid.html' },
+                    ]
+                },
+                {
+                    text: '应用',
+                    collapsed: false,
+                    items: [
+                        { text: '生成二维码', link: '/php/application/qrcode.html' },
+                        { text: '邮件收发', link: '/php/application/email.html' },
+                        { text: '短信发送', link: '/php/application/ems.html' },
+                        { text: '网页抓取', link: '/php/application/webpage-crawl.html' },
+                        { text: 'Word 读取/生成', link: '/php/application/word.html' },
+                        { text: 'Excel 读取/生成', link: '/php/application/excel.html' },
+                        { text: 'PPT 读取/生成', link: '/php/application/ppt.html' },
+                        { text: '网页截图', link: '/php/application/webpage-image.html' },
+                        { text: '日期/时间', link: '/php/application/date.html' },
+                        { text: 'Guzzle 网络请求库', link: '/php/application/guzzle.html' },
+                    ]
+                }
+            ],
 
             '/mysql/': [{
                     text: 'MySQL 基础',
@@ -171,6 +208,10 @@ export default {
                     { text: '站点支持 HTTPS', link: '/nginx/adv/https.html' },
                     { text: 'Gzip 请求压缩', link: '/nginx/adv/gzip.html' },
                     { text: 'rewrite URL 重写', link: '/nginx/adv/rewrite.html' },
+                    { text: 'Nginx + Keepalived 实现高可用', link: '/nginx/adv/keepalived.html' },
+                    { text: 'Nginx 主模块', link: '/nginx/adv/main-modules.html' },
+                    { text: 'Nginx 事件模块', link: '/nginx/adv/event-modules.html' },
+                    { text: 'Nginx 表态缓存', link: '/nginx/adv/static-cache.html' },
                 ]
             }],
 
